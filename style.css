@@ -93,6 +93,7 @@ main .card:not(.empty-body) h2 {
 main .card .empty-body {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: rgb(var(--strong));
 }
 

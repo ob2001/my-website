@@ -65,7 +65,7 @@ main a {
     color: rgb(var(--strong));
 }
 
-main .block {
+main .card {
     background-color: rgba(var(--back), 0.5);
     border: 2px solid rgb(var(--strong));
     border-radius: 10px;
@@ -74,25 +74,32 @@ main .block {
     margin: 15px 15px;
     padding: 0px 10px;
     font-family: "Philosopher";
-    transition: 1s;
+    transition: 0.5s;
     overflow: hidden;
 }
 
-main .block .title {
-    display: inline-flex;
-}
-
-main .block:hover {
+main .card:hover {
     scale: 1.05;
     background-color: rgba(var(--back), 0.8);
+    box-shadow: 3px 3px 5px rgb(var(--strong));
 }
 
-main h2 {
+main .card:not(.empty-body) h2 {
     width: fit-content;
     border-bottom: 2px solid rgb(var(--strong));
-    cursor: pointer;
     color: rgb(var(--strong));
 }
+
+main .card .empty-body {
+    display: flex;
+    justify-content: center;
+    color: rgb(var(--strong));
+}
+
+main .empty-body h2 {
+    border-bottom: 2px solid rgb(var(--strong));
+}
+
 
 main p {
     font-size: 20px;

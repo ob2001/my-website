@@ -1,7 +1,7 @@
 :root {
     --strong: 9, 57, 70;
     --primary: 40, 94, 114;
-    --secondary: 67, 112, 129;
+    --secondary: 44, 130, 161;
     --tertiary: 112, 148, 165;
     --back: 243, 248, 245;
     --link: 206, 141, 101;
@@ -11,6 +11,7 @@
 body {
     background: url("background.jpg") no-repeat center center fixed;
     background-size: cover;
+    cursor: default;
 }
 
 a {
@@ -63,6 +64,10 @@ main {
 
 main a {
     color: rgb(var(--strong));
+}
+
+main a:hover {
+    color: rgb(var(--secondary));
 }
 
 main .card {

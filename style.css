@@ -87,8 +87,9 @@ main .card:hover {
     box-shadow: 3px 3px 5px rgb(var(--strong));
 }
 
-main .card:not(.empty-body) h2 {
+main .card h2 {
     width: fit-content;
+    margin-top: 2rem;
     border-bottom: 2px solid rgb(var(--strong));
     color: rgb(var(--strong));
     margin-bottom: 0;
@@ -110,6 +111,7 @@ main p {
     text-indent: 4ch;
     word-wrap: break-word;
     hyphens: auto;
+    margin-top: 1rem;
 }
 
 footer {

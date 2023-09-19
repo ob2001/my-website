@@ -66,16 +66,19 @@ main a {
 }
 
 main .card {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(var(--back), 0.5);
     border: 2px solid rgb(var(--strong));
     border-radius: 10px;
     width: 40ch;
-    max-height: 20ch;
+    height: 20ch;
     margin: 15px 15px;
     padding: 0px 10px;
     font-family: "Philosopher";
     transition: 0.5s;
     overflow: hidden;
+    justify-content: center;
 }
 
 main .card:hover {
@@ -88,19 +91,19 @@ main .card:not(.empty-body) h2 {
     width: fit-content;
     border-bottom: 2px solid rgb(var(--strong));
     color: rgb(var(--strong));
+    margin-bottom: 0;
 }
 
 main .card .empty-body {
     display: flex;
     justify-content: center;
-    align-items: center;
     color: rgb(var(--strong));
 }
 
 main .empty-body h2 {
     border-bottom: 2px solid rgb(var(--strong));
+    margin:0;
 }
-
 
 main p {
     font-size: 20px;
